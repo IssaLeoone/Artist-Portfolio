@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Noto+Sans|Open+Sans|Pacifico|Raleway|Roboto&display=swap');
+
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #ED8BCE;
+}
+
+header {
+  height: 150px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #8E8E8E;
+}
+
+header > img {
+  display: inline-block;
+}
+
+header > h1 {
+  font-size: 40px;
+  vertical-align: text-bottom;
+  font-family: "Pacifico", sans-serif;
+  display: inline-block;
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+}
+
+#about {
+  margin: 10px 70px;
+  display: inline-block;
+  width: 30%;
+  font-family: "Roboto", "Noto Sans", sans-serif;
+  font-size: 16px;
+}
+
+#about > p {
+  text-align: center;
+}
+
+#about > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+#portfolio {
+  border-color: #000;
+  border-width: 3px;
+  display: inline-grid;
+  max-width: 60%;
+  position: absolute;
+  margin-left: 70px;
+}
+
+.caption {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+  border: 3px solid black;
+  width: 400px;
+  display: block;
+  margin: 40px auto 25px auto;
+}
+
+#contact > h2, h3, p {
+  margin: 5px auto;
+}
+
+footer {
+  background: #8E8E8E;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer > img {
+  margin: auto;
+}
+
+/* Slideshow */
+.Slideshow {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  background: rgba(0,0,0,0.8);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+
+.caption {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbers {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
